@@ -14,13 +14,13 @@ func main() {
 	flag.Parse()
 
 	if flag.Arg(0) != "" {
-		flag.PrintDefaults()
+		printHelp()
 		os.Exit(0)
 	}
 
 	if *numSentences < 1 {
 		fmt.Fprintln(os.Stderr, "Number of sentences must be greater than 0")
-		flag.PrintDefaults()
+		printHelp()
 		os.Exit(1)
 	}
 
@@ -29,7 +29,7 @@ func main() {
 	firstSentence, err := builder.getSentence(*numWords)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err.Error())
-		flag.PrintDefaults()
+		printHelp()
 		os.Exit(1)
 	}
 	fmt.Print(firstSentence)

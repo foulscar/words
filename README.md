@@ -22,7 +22,7 @@ Flags:
 Examples:
   words -w 3
   words -s 5 -w 3 -d ,
-  words -w 7 -d "___"\n
+  words -w 7 -d "___"
 ```
 
 ## Examples

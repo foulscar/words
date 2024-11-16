@@ -1,6 +1,13 @@
 # words
 A CLI tool for generating random sentences, useful for piping into files
 
+## Installation
+You can simply run the following to install words
+```bash
+go install github.com/foulscar/words
+```
+
+## Usage
 ```
 Usage: words [FLAGS]
 
@@ -15,4 +22,7 @@ Flags:
 Examples:
   words -w 3
   words -s 5 -w 3 -d ,
-  words -w 7 -d "___"\n```
+  words -w 7 -d "___"\n
+```
+
+## Examples

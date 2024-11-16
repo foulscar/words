@@ -26,3 +26,4 @@ Examples:
 ```
 
 ## Examples
+![Example 1](images/example1.png)
